@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>YouTube and Google Maps in Single Iframe</title>
+  <style>
+    body {
+      text-align: center;
+      font-family: Arial, sans-serif;
+      padding: 40px;
+    }
+    .icon {
+      width: 64px;
+      height: 64px;
+      margin: 10px;
+      cursor: pointer;
+      transition: transform 0.2s;
+    }
+    .icon:hover {
+      transform: scale(1.1);
+    }
+    iframe {
+      width: 80%;
+      height: 400px;
+      border: 2px solid #ccc;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Click an Icon to Load Content</h2>
+
+  <!-- Icons -->
+     <iframe id="displayFrame" src="" allowfullscreen></iframe>
+   <center>
+  <img src="download.png" width="100"
+       onclick="document.getElementById('displayFrame').src='https://www.youtube.com/embed/b0fPciW_uco'">
+
+  <img src="download (1).png" width="75"
+       onclick="document.getElementById('displayFrame').src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387190.2799144265!2d-74.259875681509!3d40.69767006345792!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzjCsDQyJzA4LjYiTiA3NMKwMTUnNDMuOSJX!5e0!3m2!1sen!2sus!4v1618309293633!5m2!1sen!2sus'">
+   </center>
+  <!-- Shared Iframe -->
+
+
+</body>
+</html>
